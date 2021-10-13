@@ -2,16 +2,29 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Head from './Head.vue'
+import Left from "./Left.vue"
+import Main from "./Main.vue"
 import router from './router'
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-var home = new Vue({
+new Vue({
     el: '#head',//html中的id为home的div
     router,
     components: { Head },
     template: '<Head/>'
 })
 
-
+new Vue({
+    el: '#left',//html中的id为home的div
+    router,
+    components: { Left },
+    template: '<Left/>'
+})
+new Vue({
+    el: '#main',//html中的id为home的div
+    router,
+    components: { Main },
+    template: '<Main/>'
+})

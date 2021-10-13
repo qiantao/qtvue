@@ -1,293 +1,271 @@
 <template>
-  <div class ="head">
-<!--    左上角 logo-->
+  <!--  头部信息-->
+  <header class="head">
+    <!--    左上角 logo-->
     <div class="logo-wrapper">
       <a href="" class="admin-logo">
         <img src="static/picture/logo.png" alt="">
       </a>
-
     </div>
-<!--    <div class="c1"></div>-->
-    <div class="header-links" >
+    <!-- 主页图标-->
+    <div class="header-links">
       <a href="javascript:void(0);" class="toggle-btn">
         <span></span>
       </a>
     </div>
-<!--    <div class="c2"></div>-->
+    <!--    放大镜-->
     <div class="header-links search-link">
       <a class="search-toggle" href="javascript:void(0);">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-
-             viewbox="0 0 560.966 560.966"
-             width="80px"
-             height="80px"
-             xml:space="preserve">
-          <!--             x="0px" y="0px"-->
-<!--             style="enable-background:new 0 0 560.966 560.966;"-->
-
-
-                                    <path d="M55.146,51.887 L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
-                                    s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
-                                    c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
-                                    s-17-7.626-17-17S14.61,6,23.984,6z"></path>
-                                </svg>
+        <!--        <img src="static/image/search.jpg" style="position: relative; width: 20px;height: 20px; margin-top: 0px">-->
+        <svg t="1633918009196" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             p-id="2301"
+             width="20"
+             height="20"
+        >
+          <path d="M941.056 808.96l-288.256-285.184c79.36-120.832 69.12-280.576-32.768-381.952C502.784 25.6 308.736 30.72
+          186.368 153.6c-122.368 122.88-126.464 316.928-9.216 433.664 103.936 103.424 268.8 110.592 390.144 24.576l280.576
+          276.48c13.312 13.312 30.208 22.016 48.64 24.576 39.424 5.632 56.32-13.312
+          62.976-34.304 7.68-24.576 0-51.712-18.432-69.632zM549.376 513.536c-88.064
+          88.576-227.328 93.696-310.272 11.776-82.944-82.432-78.848-221.696
+          9.728-310.272 88.064-89.088 227.328-94.208 310.272-11.776 82.432 82.432 78.336 221.696-9.728 310.272z"
+                fill="#040000" p-id="2302"></path>
+        </svg>
       </a>
     </div>
-    <div class="c3"></div>
-<!--    标题
-    <div class="header-right">
 
-      <div class="header-left">
-        <div class="header-links">
-          <a href="javascript:void(0);" class="toggle-btn">
-            <span></span>
-          </a>
-        </div>
-
-        <div class="header-links search-link">
-          <a class="search-toggle" href="javascript:void(0);">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
-                                      <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
-                                      s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
-                                      c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
-                                      s-17-7.626-17-17S14.61,6,23.984,6z"></path>
-                                  </svg>
-          </a>
-        </div>
+    <!--右侧信息-->
+    <div class="header-controls">
+      <!--      设置图标-->
+      <div class="setting-wrapper header-links">
+        <a href="javascript:void(0);" class="setting-info">
+                                <span class="header-icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 16 16">
+                                        <path d="M7 0h2v3h-2v-3z"></path>
+                                        <path d="M6 4v3h1v9h2v-9h1v-3z"></path>
+                                        <path d="M2 0h2v8h-2v-8z"></path>
+                                        <path d="M1 9v3h1v4h2v-4h1v-3z"></path>
+                                        <path d="M12 0h2v10h-2v-10z"></path>
+                                        <path d="M11 11v3h1v2h2v-2h1v-3z"></path>
+                                    </svg>
+                                </span>
+        </a>
       </div>
+      <!--      购物车图标-->
+      <div class="cart-wrapper header-links">
+        <a href="javascript:void(0);" class="cart-info">
+                    <span class="header-icon">
+                      <svg t="1633919305931" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                           xmlns="http://www.w3.org/2000/svg" p-id="3120" width="200" height="200"><path
+                          d="M64 149.333333h64c12.949333 0 25.450667 10.965333 27.178667 23.978667l74.026666 555.029333C233.706667 762.304 264.384 789.333333 298.453333 789.333333H874.666667v-42.666666H298.474667c-12.629333 0-25.28-11.136-26.986667-23.978667L197.461333 167.68C192.938667 133.461333 162.346667 106.666667 128 106.666667H64v42.666666z"
+                          fill="#3D3D3D" p-id="3121"></path><path
+                          d="M277.333333 234.666667h597.504c10.453333 0 16.853333 7.402667 15.36 17.792l-51.968 363.712c-1.813333 12.757333-14.634667 23.829333-27.669333 23.829333H341.333333a21.333333 21.333333 0 0 0 0 42.666667h469.226667c34.24 0 65.066667-26.666667 69.909333-60.458667l51.968-363.712c5.141333-36.053333-21.162667-66.496-57.6-66.496H277.333333a21.333333 21.333333 0 0 0 0 42.666667z"
+                          fill="#3D3D3D" p-id="3122"></path><path
+                          d="M298.666667 896m-42.666667 0a42.666667 42.666667 0 1 0 85.333333 0 42.666667 42.666667 0 1 0-85.333333 0Z"
+                          fill="#3D3D3D" p-id="3123"></path><path
+                          d="M810.666667 896m-42.666667 0a42.666667 42.666667 0 1 0 85.333333 0 42.666667 42.666667 0 1 0-85.333333 0Z"
+                          fill="#3D3D3D" p-id="3124"></path></svg>
+                    </span>
+          <span class="item-count">数</span>
+        </a>
+        <div class="of-notification-comment">
+          <div class="of-nt-text">
+            <h5>Shopping Cart</h5>
+            <h6>Your Have 3 Item In Your Cart</h6>
+          </div>
+          <div class="of-nt-scroll">
 
-      <div class="header-controls">
-              <div class="setting-wrapper header-links">
-                <a href="javascript:void(0);" class="setting-info">
-                                        <span class="header-icon">
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 16 16">
-                                                <path d="M7 0h2v3h-2v-3z"></path>
-                                                <path d="M6 4v3h1v9h2v-9h1v-3z"></path>
-                                                <path d="M2 0h2v8h-2v-8z"></path>
-                                                <path d="M1 9v3h1v4h2v-4h1v-3z"></path>
-                                                <path d="M12 0h2v10h-2v-10z"></path>
-                                                <path d="M11 11v3h1v2h2v-2h1v-3z"></path>
-                                            </svg>
-                                        </span>
-                </a>
+            <div class="of-nt-flex">
+              <div class="of-nt-img">
+                <img src="static/picture/product2.png" alt="">
               </div>
-              <div class="cart-wrapper header-links">
-                <a href="javascript:void(0);" class="cart-info">
-                                        <span class="header-icon">
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
-                                                <g>
-                                                    <g>
-                                                        <path d="M402.351,381.058h-203.32l-11.806-47.224h266.587L512,101.085H129.038L108.882,20.46H0v33.4h82.804l82.208,328.827
-                                                            c-24.053,5.971-41.938,27.737-41.938,53.611c0,30.461,24.781,55.242,55.241,55.242c30.459,0,55.241-24.781,55.241-55.242
-                                                            c0-7.755-1.613-15.138-4.511-21.841h122.577c-2.897,6.703-4.511,14.086-4.511,21.841c0,30.461,24.781,55.242,55.241,55.242
-                                                            c30.459,0,55.241-24.781,55.241-55.242C457.592,405.84,432.811,381.058,402.351,381.058z M287.029,300.434h-37.08l-8.284-66.275
-                                                            h45.365V300.434z M411.912,134.484h57.31l-16.568,66.275h-49.026L411.912,134.484z M399.453,234.16h44.85l-16.568,66.275h-36.566
-                                                            L399.453,234.16z M320.428,134.484h57.824l-8.284,66.275h-49.539V134.484z M320.428,234.159h45.365l-8.284,66.275h-37.08V234.159z
-                                                             M287.029,134.484v66.275h-49.539l-8.284-66.275H287.029z M137.388,134.484h58.158l8.284,66.275h-49.873L137.388,134.484z
-                                                             M162.307,234.159h45.699l8.284,66.275h-37.414L162.307,234.159z M178.315,458.141c-12.043,0-21.841-9.798-21.841-21.842
-                                                            c0-12.043,9.798-21.841,21.841-21.841s21.841,9.798,21.841,21.841C200.156,448.343,190.358,458.141,178.315,458.141z
-                                                             M402.351,458.141c-12.043,0-21.841-9.798-21.841-21.842c0-12.043,9.798-21.841,21.841-21.841
-                                                            c12.043,0,21.841,9.798,21.841,21.841C424.192,448.343,414.394,458.141,402.351,458.141z"></path>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </span>
-                  <span class="item-count">03</span>
-                </a>
-                <div class="of-notification-comment">
-                  <div class="of-nt-text">
-                    <h5>Shopping Cart</h5>
-                    <h6>Your Have 3 Item In Your Cart</h6>
-                  </div>
-                  <div class="of-nt-scroll">
+              <div class="of-nt-cmnt">
+                <p>Ceiling Light<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
+											<defs>
+											<filter>
+												<feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
+												<fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
+												<feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
+											</filter>
 
-                    <div class="of-nt-flex">
-                      <div class="of-nt-img">
-                        <img src="static/picture/product2.png" alt="">
-                      </div>
-                      <div class="of-nt-cmnt">
-                        <p>Ceiling Light<span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
-                              <defs>
-                              <filter>
-                                <feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
-                                <fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
-                                <feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
-                              </filter>
-
-                              </defs>
-                              <g>
-                              <path fill-rule="evenodd" fill="#222222" d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
-                              </g>
-                              </svg>
-                            </span></p>
-                        <div class="int-table-quantity">
-                          <div class="quantity-wrapper">
-                            <div class="quantity-qty">
-                              <h5>$100</h5>
-                            </div>
-                            <div class="input-group">
-                              <span class="quantity-minus"> - </span>
-                              <input type="number" class="quantity" value="2">
-                              <span class="quantity-plus"> + </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+											</defs>
+											<g>
+											<path fill-rule="evenodd" fill="#222222"
+                            d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
+											</g>
+											</svg>
+										</span></p>
+                <div class="int-table-quantity">
+                  <div class="quantity-wrapper">
+                    <div class="quantity-qty">
+                      <h5>$100</h5>
                     </div>
-                    <div class="of-nt-flex">
-                      <div class="of-nt-img">
-                        <img src="static/picture/product3.png" alt="">
-                      </div>
-                      <div class="of-nt-cmnt">
-                        <p>Wooden Sofa<span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
-                              <defs>
-                              <filter>
-                                <feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
-                                <fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
-                                <feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
-                              </filter>
-
-                              </defs>
-                              <g>
-                              <path fill-rule="evenodd" fill="#222222" d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
-                              </g>
-                            </svg>
-                            </span></p>
-                        <div class="int-table-quantity">
-                          <div class="quantity-wrapper">
-                            <div class="quantity-qty">
-                              <h5>$65</h5>
-                            </div>
-                            <div class="input-group">
-                              <span class="quantity-minus"> - </span>
-                              <input type="number" class="quantity" value="2">
-                              <span class="quantity-plus"> + </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="of-nt-flex">
-                      <div class="of-nt-img">
-                        <img src="static/picture/product.png" alt="">
-                      </div>
-                      <div class="of-nt-cmnt">
-                        <p>Dining Chair<span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
-                              <defs>
-                              <filter>
-                                <feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
-                                <fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
-                                <feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
-                              </filter>
-
-                              </defs>
-                              <g>
-                              <path fill-rule="evenodd" fill="#222222" d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
-                              </g>
-                              </svg>
-                            </span></p>
-                        <div class="int-table-quantity">
-                          <div class="quantity-wrapper">
-                            <div class="quantity-qty">
-                              <h5>$86</h5>
-                            </div>
-                            <div class="input-group">
-                              <span class="quantity-minus"> - </span>
-                              <input type="number" class="quantity" value="2">
-                              <span class="quantity-plus"> + </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="input-group">
+                      <span class="quantity-minus"> - </span>
+                      <input type="number" class="quantity" value="2">
+                      <span class="quantity-plus"> + </span>
                     </div>
                   </div>
-                  <div class="int-flex-total">
-                    <h4>Order Total - </h4>
-                    <h5>$251</h5>
-                  </div>
-                  <div class="int-sop-cart-btn">
-                    <a href="cart.html" class="ad-btn">View cart</a>
-                    <a href="checkout.html" class="ad-btn">checkout</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="notification-wrapper header-links">
-                <a href="javascript:void(0);" class="notification-info">
-                                        <span class="header-icon">
-                                            <svg enable-background="new 0 0 512 512" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m450.201 407.453c-1.505-.977-12.832-8.912-24.174-32.917-20.829-44.082-25.201-106.18-25.201-150.511 0-.193-.004-.384-.011-.576-.227-58.589-35.31-109.095-85.514-131.756v-34.657c0-31.45-25.544-57.036-56.942-57.036h-4.719c-31.398 0-56.942 25.586-56.942 57.036v34.655c-50.372 22.734-85.525 73.498-85.525 132.334 0 44.331-4.372 106.428-25.201 150.511-11.341 24.004-22.668 31.939-24.174 32.917-6.342 2.935-9.469 9.715-8.01 16.586 1.473 6.939 7.959 11.723 15.042 11.723h109.947c.614 42.141 35.008 76.238 77.223 76.238s76.609-34.097 77.223-76.238h109.947c7.082 0 13.569-4.784 15.042-11.723 1.457-6.871-1.669-13.652-8.011-16.586zm-223.502-350.417c0-14.881 12.086-26.987 26.942-26.987h4.719c14.856 0 26.942 12.106 26.942 26.987v24.917c-9.468-1.957-19.269-2.987-29.306-2.987-10.034 0-19.832 1.029-29.296 2.984v-24.914zm29.301 424.915c-25.673 0-46.614-20.617-47.223-46.188h94.445c-.608 25.57-21.549 46.188-47.222 46.188zm60.4-76.239c-.003 0-213.385 0-213.385 0 2.595-4.044 5.236-8.623 7.861-13.798 20.104-39.643 30.298-96.129 30.298-167.889 0-63.417 51.509-115.01 114.821-115.01s114.821 51.593 114.821 115.06c0 .185.003.369.01.553.057 71.472 10.25 127.755 30.298 167.286 2.625 5.176 5.267 9.754 7.861 13.798z"></path></svg>
-                                        </span>
-                  <span class="count-notification"></span>
-                </a>
-                <div class="recent-notification">
-                  <div class="drop-down-header">
-                    <h4>All Notification</h4>
-                    <p>You have 6 new notifications</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="javascript:void(0);">
-                        <h5><i class="fas fa-exclamation-circle mr-2"></i>Storage Full</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer.</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);">
-                        <h5><i class="far fa-envelope mr-2"></i>New Membership</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer.</p>
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="drop-down-footer">
-                    <a href="javascript:void(0);" class="btn sm-btn">
-                      View All
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="user-info-wrapper header-links">
-                <a href="javascript:void(0);" class="user-info">
-                  <img src="static/picture/user.jpg" alt="" class="user-img">
-                  <div class="blink-animation">
-                    <span class="blink-circle"></span>
-                    <span class="main-circle"></span>
-                  </div>
-                </a>
-                <div class="user-info-box">
-                  <div class="drop-down-header">
-                    <h4>John Brown</h4>
-                    <p>UI | UX Designer</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="profile.html">
-                        <i class="far fa-edit"></i> Edit Profile
-                      </a>
-                    </li>
-                    <li>
-                      <a href="setting.html">
-                        <i class="fas fa-cog"></i> Settings
-                      </a>
-                    </li>
-                    <li>
-                      <a href="login.html">
-                        <i class="fas fa-sign-out-alt"></i> logout
-                      </a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
+            <div class="of-nt-flex">
+              <div class="of-nt-img">
+                <img src="static/picture/product3.png" alt="">
+              </div>
+              <div class="of-nt-cmnt">
+                <p>Wooden Sofa<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
+											<defs>
+											<filter>
+												<feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
+												<fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
+												<feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
+											</filter>
 
+											</defs>
+											<g>
+											<path fill-rule="evenodd" fill="#222222"
+                            d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
+											</g>
+										</svg>
+										</span></p>
+                <div class="int-table-quantity">
+                  <div class="quantity-wrapper">
+                    <div class="quantity-qty">
+                      <h5>$65</h5>
+                    </div>
+                    <div class="input-group">
+                      <span class="quantity-minus"> - </span>
+                      <input type="number" class="quantity" value="2">
+                      <span class="quantity-plus"> + </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="of-nt-flex">
+              <div class="of-nt-img">
+                <img src="static/picture/product.png" alt="">
+              </div>
+              <div class="of-nt-cmnt">
+                <p>Dining Chair<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
+											<defs>
+											<filter>
+												<feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
+												<fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
+												<feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
+											</filter>
 
+											</defs>
+											<g>
+											<path fill-rule="evenodd" fill="#222222"
+                            d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
+											</g>
+											</svg>
+										</span></p>
+                <div class="int-table-quantity">
+                  <div class="quantity-wrapper">
+                    <div class="quantity-qty">
+                      <h5>$86</h5>
+                    </div>
+                    <div class="input-group">
+                      <span class="quantity-minus"> - </span>
+                      <input type="number" class="quantity" value="2">
+                      <span class="quantity-plus"> + </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="int-flex-total">
+            <h4>Order Total - </h4>
+            <h5>$251</h5>
+          </div>
+          <div class="int-sop-cart-btn">
+            <a href="cart.html" class="ad-btn">View cart</a>
+            <a href="checkout.html" class="ad-btn">checkout</a>
+          </div>
+        </div>
+      </div>
+      <!--      消息图标-->
+      <div class="notification-wrapper header-links">
+        <a href="javascript:void(0);" class="notification-info">
+          <span class="header-icon">
+            <svg t="1633919412378" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 p-id="4037" width="200" height="200"><path
+                d="M512 256c117.632 0 213.333333 95.701333 213.333333 213.333333v149.333334c0 13.845333 4.501333 27.328 12.8 38.4L789.333333 725.333333H234.666667l51.2-68.266666c8.298667-11.072 12.8-24.554667 12.8-38.4v-149.333334c0-117.632 95.701333-213.333333 213.333333-213.333333m0-64c-153.173333 0-277.333333 124.16-277.333333 277.333333v149.333334l-64 85.333333v42.666667c0 23.466667 19.2 42.666667 42.666666 42.666666h597.333334c23.466667 0 42.666667-19.2 42.666666-42.666666v-42.666667l-64-85.333333v-149.333334c0-153.173333-124.16-277.333333-277.333333-277.333333zM512 853.333333a64 64 0 0 1-64-64h-64c0 70.570667 57.429333 128 128 128s128-57.429333 128-128h-64a64 64 0 0 1-64 64z"
+                fill="#A8A8B4" p-id="4038"></path><path
+                d="M512 256a42.666667 42.666667 0 1 1-0.021333-85.312A42.666667 42.666667 0 0 1 512 256h97.621333A105.962667 105.962667 0 0 0 618.666667 213.333333c0-58.816-47.850667-106.666667-106.666667-106.666666s-106.666667 47.850667-106.666667 106.666666c0 15.189333 3.306667 29.568 9.045334 42.666667H512z"
+                fill="#A8A8B4" p-id="4039"></path></svg>
+          </span>
+          <span class="count-notification"></span>
+        </a>
+
+        <div class="recent-notification">
+          <div class="drop-down-header">
+            <h4>All Notification</h4>
+            <p>You have 6 new notifications</p>
+          </div>
+          <ul>
+            <li>
+              <a href="javascript:void(0);">
+                <h5><i class="fas fa-exclamation-circle mr-2"></i>Storage Full</h5>
+                <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <h5><i class="far fa-envelope mr-2"></i>New Membership</h5>
+                <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+              </a>
+            </li>
+          </ul>
+          <div class="drop-down-footer">
+            <a href="javascript:void(0);" class="btn sm-btn">
+              View All
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--      用户信息-->
+      <div class="user-info-wrapper header-links">
+        <a href="javascript:void(0);" class="user-info">
+          <img src="static/picture/user.jpg" alt="" class="user-img">
+          <div class="blink-animation">
+            <span class="blink-circle"></span>
+            <span class="main-circle"></span>
+          </div>
+        </a>
+        <div class="user-info-box">
+          <div class="drop-down-header">
+            <h4>John Brown</h4>
+            <p>UI | UX Designer</p>
+          </div>
+          <ul>
+            <li>
+              <a href="profile.html">
+                <i class="far fa-edit"></i> Edit Profile
+              </a>
+            </li>
+            <li>
+              <a href="setting.html">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+            </li>
+            <li>
+              <a href="login.html">
+                <i class="fas fa-sign-out-alt"></i> logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-  -->
-  </div>
-
+  </header>
 </template>
 
 <script>
@@ -297,49 +275,35 @@ export default {
 </script>
 
 <style>
-.search-toggle svg{
+
+.head {
+
   height: 80px;
-}
-.head{
   width: 100%;
-  height: 80px;
+  box-shadow: 0 0 20px;
   position: relative;
   display: flex;
-  /*background-color: #0c0c0c;*/
-  /*align-items: center;*/
-  /*padding: 10px 20px;*/
-  /*justify-content: center;*/
-  /*background-color: #00acee;*/
-}
-.header-links{
-  /*width: 33%;*/
-  /*height: 80px;*/
-  /*background-color: #4e555b;*/
-  position: relative;
-}
-.header-links{
-  /*width: 33%;*/
-  height: 100px;
-  /*background-color: #dd2a7b;*/
-  /*position: relative;*/
-}
-.c3{
-  width: 34%;
-  height: 80px;
-  background-color: #fbcf00;
-  position: relative;
-}
-.logo-wrapper {
-  width: 280px;
-  height: 80px;
-  display: flex;
-  position: relative;
-  /*align-items: center;*/
-  padding: 20px 20px;
-  /*justify-content: center;*/
-  background-color: #00acee;
-  /*flex-direction: row;*/
-  /*flex-wrap: wrap;*/
 }
 
+.logo-wrapper {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  width: 350px;
+  background-color: var(--secondary);
+}
+
+.header-controls {
+  width: 100%;
+}
+.user-info-box{
+  z-index: 99;
+}
+.recent-notification{
+  z-index: 99;
+}
+.of-notification-comment{
+  z-index: 99;
+}
 </style>
