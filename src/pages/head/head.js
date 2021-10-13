@@ -4,6 +4,7 @@ import Vue from 'vue'
 import Head from './Head.vue'
 import Left from "./Left.vue"
 import Main from "./Main.vue"
+import Setting from "./Setting.vue";
 import router from './router'
 
 Vue.config.productionTip = false
@@ -27,4 +28,10 @@ new Vue({
     router,
     components: { Main },
     template: '<Main/>'
+})
+new Vue({
+    el: '#setting',//html中的id为home的div
+    router,
+    components: { Setting },
+    template: '<Setting/>'
 })
