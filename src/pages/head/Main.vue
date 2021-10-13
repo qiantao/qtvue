@@ -428,38 +428,14 @@ export default {
 </script>
 
 <style scoped>
-.md {
-  position: relative;
-  width: 1200px;
-  height: 1200px;
-  left: 350px;
-  top: 280px;
-  background-color: #fbcf00;
-  z-index: 1;
-
-}
 #main{
-  /*overflow-y: auto;*/
-  /*overflow-x: scroll;*/
-  /*overflow: auto;*/
   top:0px;
   height: 100%;
   width: 100%;
   min-height: 100%;
   position: relative;
-  /*z-index: -1;*/
-  /*background-color: #fbcf00;*/
 }
-/*.page-wrapper{*/
-/*  height: 200px;*/
-/*  width: 200px;*/
-/*  background-color: #fbcf00;*/
-/*  left: 400px;*/
-/*  top: 300px;*/
-/*  margin-top: 0px;*/
-/*  overflow-y: scroll;*/
-/*  overflow-x: scroll;*/
-/*  position: relative;*/
-
-/*}*/
+.page-wrapper{
+  z-index: 1;
+}
 </style>

@@ -601,13 +601,12 @@ export default {
   top: 50px;
   height: 100%;
   width: 100%;
-  /*overflow-y:auto;*/
-  /*overflow-x: auto;*/
+  z-index: 98;
 }
 .sidebar-wrapper{
   width: 280px;
   height: 100%;
-  z-index: 9;
+  z-index: 98;
   background: var(--secondary);
   bottom: 0;
   position: absolute;
