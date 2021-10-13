@@ -596,7 +596,7 @@ export default {
 
 <style scoped>
 #left{
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 50px;
   height: 100%;
@@ -607,7 +607,6 @@ export default {
 .sidebar-wrapper{
   width: 280px;
   height: 100%;
-
   z-index: 9;
   background: var(--secondary);
   bottom: 0;

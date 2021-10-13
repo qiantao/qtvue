@@ -277,12 +277,14 @@ export default {
 <style>
 
 .head {
-
   height: 80px;
   width: 100%;
   box-shadow: 0 0 20px;
-  position: relative;
+  position: fixed;
   display: flex;
+  top: 0px;
+  z-index: 98;
+  background-color: white;
 }
 
 .logo-wrapper {
@@ -296,6 +298,7 @@ export default {
 
 .header-controls {
   width: 100%;
+  z-index: 98;
 }
 .user-info-box{
   z-index: 99;
