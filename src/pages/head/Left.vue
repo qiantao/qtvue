@@ -6,9 +6,9 @@
 
       <div class="side-menu-wrap">
         <!--        菜单具体内容-->
-        <ul class="main-menu">
-          <li>
-            <a href="javascript:void(0);" class="active">
+        <ul class="main-menu" ref ='main-menu' @click="a">
+          <li >
+            <router-link to="/main">
               <span class="icon-menu feather-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -17,35 +17,17 @@
                     <polyline points="9 22 9 12 15 12 15 22"/>
                   </svg>
               </span>
-              <span class="menu-text">
-                                主页
-              </span>
-            </a>
 
-            <!--            <ul class="sub-menu">-->
-            <!--              <li>-->
-            <!--                <a href="">-->
-            <!--                                    <span class="icon-dash">-->
-            <!--                                    </span>-->
-            <!--                  <span class="menu-text">-->
-            <!--                                        Admin-->
-            <!--                                    </span>-->
-            <!--                </a>-->
-            <!--              </li>-->
-            <!--              <li>-->
-            <!--                <a href="user.html">-->
-            <!--                                    <span class="icon-dash">-->
-            <!--                                    </span>-->
-            <!--                  <span class="menu-text">-->
-            <!--                                        User-->
-            <!--                                    </span>-->
-            <!--                </a>-->
-            <!--              </li>-->
-            <!--            </ul>-->
+              <span class="menu-text">
+                                   主页
+              </span>
+
+            </router-link>
+
           </li>
 
           <li>
-            <a href="photo">
+            <router-link to="/photo">
               <span class="icon-menu feather-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -57,11 +39,12 @@
                     <line x1="12" y1="22.08" x2="12" y2="12"/>
                   </svg>
               </span>
-              <span class="menu-text"> 一起看照片</span>
-            </a>
+
+              <span class="menu-text">圆形旋转</span>
+            </router-link>
           </li>
           <li>
-            <a href="orders.html">
+            <router-link to="/order">
               <span class="icon-menu feather-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -75,11 +58,11 @@
               <span class="menu-text">
                                 Orders
                             </span>
-            </a>
+            </router-link>
           </li>
-          <li>
-            <a href="customers.html">
-                            <span class="icon-menu feather-icon">
+          <li >
+            <router-link to="/customers">
+              <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
                                      stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                      stroke-linejoin="round" class="feather feather-users"><path
@@ -91,29 +74,29 @@
               <span class="menu-text">
                                 Customers
                             </span>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a href="calendar.html">
-                            <span class="icon-menu feather-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
-                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4"
-                                                                                                    width="18"
-                                                                                                    height="18" rx="2"
-                                                                                                    ry="2"></rect><line
-                                    x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line
-                                    x1="3" y1="10" x2="21" y2="10"></line></svg>
-                            </span>
+            <router-link to="/calendar">
+              <span class="icon-menu feather-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                       stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4"
+                                                                                      width="18"
+                                                                                      height="18" rx="2"
+                                                                                      ry="2"></rect><line
+                      x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line
+                      x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </span>
               <span class="menu-text">
-                                Calendar
-                            </span>
-            </a>
+                  Calendar
+              </span>
+            </router-link>
           </li>
 
           <li>
-            <a href="fontawesome.html">
-                            <span class="icon-menu feather-icon">
+            <router-link to="/fontawesome">
+              <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
                                      stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                      stroke-linejoin="round" class="feather feather-grid nav-icon"><rect x="3" y="3"
@@ -127,7 +110,7 @@
               <span class="menu-text">
                                 Font Awesome
                             </span>
-            </a>
+            </router-link>
           </li>
           <li>
             <a href="javascript:void(0);">
@@ -461,7 +444,7 @@
               </li>
             </ul>
           </li>
-          <li class="active-li">
+          <li>
             <a href="javascript:void(0);">
                             <span class="icon-menu feather-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
@@ -583,27 +566,48 @@
 
       </div>
     </aside>
+
   </aside>
+
 </template>
 
 <script>
+
 export default {
-  name: "Left"
+  name: "Left",
+  methods:{
+    a(){
+      // alert("xxxxx");
+      // let liList = this.$refs["main-menu"].getElementsByTagName('li');
+    }
+  },
+  mounted() {
+    // const x = "";
+    // const y = "active";
+    // let liList = this.$refs["main-menu"].getElementsByTagName('li');
+    // for (const liListKey in liList) {
+    //   console.log(liListKey)
+    //   console.log(liList[liListKey].class())
+    //   // liList[liListKey].onclick("a()")
+    //
+    // }
+  }
 }
 //menu-text
 
 </script>
 
 <style scoped>
-#left{
+#left {
   position: fixed;
   left: 0px;
   top: 50px;
   height: 100%;
-  width: 100%;
-  z-index: 98;
+  width: 280px;
+  z-index: 97;
 }
-.sidebar-wrapper{
+
+.sidebar-wrapper {
   width: 280px;
   height: 100%;
   z-index: 98;
@@ -613,9 +617,8 @@ export default {
   top: 0px;
   -webkit-box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
   box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
-  min-height: 100%; //最小高度
-
-  overflow-y: auto;
+  min-height: 100%;
+/ / 最小高度 overflow-y: auto;
   transition: all 0.3s cubic-bezier(0.64, 0.02, 0.23, 0.96);
   -webkit-transition: all 0.3s cubic-bezier(0.64, 0.02, 0.23, 0.96);
   -moz-transition: all 0.3s cubic-bezier(0.64, 0.02, 0.23, 0.96);

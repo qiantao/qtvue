@@ -292,7 +292,9 @@ export default {
   right: 0;
   left: 0;
   z-index: 99;
-  width: 350px;
+  width: 280px;
+  max-width: 280px;
+  min-width: 280px;
   background-color: var(--secondary);
 }
 
