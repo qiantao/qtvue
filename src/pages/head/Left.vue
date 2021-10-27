@@ -618,7 +618,7 @@ export default {
   -webkit-box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
   box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
   min-height: 100%;
-/ / 最小高度 overflow-y: auto;
+  overflow-y: auto;
   transition: all 0.3s cubic-bezier(0.64, 0.02, 0.23, 0.96);
   -webkit-transition: all 0.3s cubic-bezier(0.64, 0.02, 0.23, 0.96);
   -moz-transition: all 0.3s cubic-bezier(0.64, 0.02, 0.23, 0.96);
