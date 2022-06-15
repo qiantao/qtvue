@@ -108,10 +108,11 @@
                                                                                                            height="7"></rect></svg>
                             </span>
               <span class="menu-text">
-                                Font Awesome
+                                FontAwesome
                             </span>
             </router-link>
           </li>
+
           <li>
             <a href="javascript:void(0);">
                             <span class="icon-menu feather-icon">
@@ -120,19 +121,21 @@
                                      stroke-linejoin="round" class="feather feather-wind"><path
                                     d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
                             </span>
-              <span class="menu-text">
+              <span class="menu-text has-sub-menu">
                                 UI Kit
                             </span>
             </a>
-            <ul class="sub-menu">
+            <ul class="sub-menu" >
               <li>
-                <a href="modal.html">
-                                    <span class="icon-dash">
-                                    </span>
-                  <span class="menu-text">
-                                        Modal
-                                    </span>
-                </a>
+                <router-link to="/modal">
+                    <a href="modal.html">
+                                        <span class="icon-dash">
+                                        </span>
+                      <span class="menu-text">
+                                            Modal
+                                        </span>
+                    </a>
+                </router-link>
               </li>
               <li>
                 <a href="tab.html">
@@ -625,4 +628,23 @@ export default {
   -o-transition: all 0.3s cubic-bezier(0.64, 0.02, 0.23, 0.96);
 
 }
+
+.sidebar-wrapper ul li span.has-sub-menu{
+  color: red;
+}
+
+/*.has-sub-menu::before{*/
+/*  position: absolute;*/
+/*  content: '';*/
+/*  width: 7px;*/
+/*  height: 7px;*/
+/*  transform: rotate(45deg);*/
+/*  top: 0px;*/
+/*  bottom: 0;*/
+/*  margin: auto 0 auto 8px;*/
+/*  border-top: 1.5px solid var(--white);*/
+/*  border-right: 1.5px solid var(--white);*/
+/*  right: 3px;*/
+/*}*/
+
 </style>

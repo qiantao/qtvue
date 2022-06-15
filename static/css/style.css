@@ -2416,7 +2416,8 @@ svg[stroke="currentColor"] {
     width: calc(100% - 45px);
 }
 
-.side-menu-wrap ul li.has-sub-menu>a span.menu-text:before {
+/*.side-menu-wrap ul li.has-sub-menu>a span.menu-text::before {*/
+.sidebar-wrapper ul li span.has-sub-menu::before {
     position: absolute;
     content: '';
     width: 7px;
@@ -2430,13 +2431,15 @@ svg[stroke="currentColor"] {
     right: 3px;
 }
 
-.side-menu-wrap ul li.has-sub-menu.active>a span.menu-text:before {
+/*.side-menu-wrap ul li.has-sub-menu.active>a span.menu-text::before {*/
+.sidebar-wrapper ul li span.has-sub-menu::before {
     transform: rotate(135deg);
     top: -8px;
 }
 
 .side-menu-wrap ul li.has-sub-menu>a span.menu-text:before,
-.side-menu-wrap ul li.has-sub-menu.active>a span.menu-text:before {
+.sidebar-wrapper ul li span.has-sub-menu::before {
+/*.side-menu-wrap ul li.has-sub-menu.active>a span.menu-text::before {*/
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
