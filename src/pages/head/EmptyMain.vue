@@ -25,4 +25,9 @@ export default {
   /*background-color: #9f9f20;*/
 
 }
+.p1{
+  margin-left: 200px;
+  padding-top:100px;
+  padding-left: 500px;
+}
 </style>

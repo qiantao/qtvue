@@ -7,6 +7,7 @@ import Order from "../submod/Order";
 import Customers from "../submod/Customers";
 import Calendar from "../submod/Calendar";
 import Fontawesome from "../submod/Fontawesome";
+import Empty from "../submod/Empty";
 
 Vue.use(Router)
 
@@ -23,6 +24,7 @@ export default new Router({
     { path: '/customers', name:'Customers',component: Customers },
     { path: '/calendar', name:'Calendar',component: Calendar },
     { path: '/fontawesome', name:'Fontawesome',component: Fontawesome },
+    { path: '/empty', name:'Empty',component: Empty },
 
   ]
 })
