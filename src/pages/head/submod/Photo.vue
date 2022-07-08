@@ -49,7 +49,8 @@ export default {
   width: 100%;
   z-index: 96;
   position: fixed;
-  background: url(../assets/bg.jpeg) no-repeat;
+  background-color: pink;
+  /*background: url(../assets/bg.jpeg) no-repeat;*/
 
 }
 #box{
