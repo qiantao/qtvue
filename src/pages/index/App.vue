@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/logo.png" @click="head">
     <router-view/>
     <HelloWorld/>
   </div>
@@ -12,6 +12,12 @@ export default {
   name: 'App',
   components:{
     HelloWorld
+  },
+  methods:{
+    head(){
+      // this.$router.push({ path:'/'  })
+      window.location="head.html"
+    }
   }
 }
 </script>

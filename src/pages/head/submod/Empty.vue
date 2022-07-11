@@ -28,8 +28,21 @@
               </tr>
             </table>
           </div>
-      </div>
 
+
+        <div class="qtUl">
+          <button @click="bindLi">绑定事件</button>
+          <ul>
+            <li><a class="qt_ul_a" @mouseover="changeColor($event)" @mouseleave="changeColor($event)">11111</a></li>
+            <li><a class="qt_ul_a" @mouseover="changeColor($event)" @mouseleave="changeColor($event)">11111</a></li>
+            <li><a class="qt_ul_a" @mouseover="changeColor($event)" @mouseleave="changeColor($event)">11111</a></li>
+            <li><a class="qt_ul_a" @mouseover="changeColor($event)" @mouseleave="changeColor($event)">11111</a></li>
+          </ul>
+        </div>
+
+
+
+      </div>
     </div>
   </div>
 </template>
@@ -52,6 +65,20 @@ export default {
       let elementById = document.getElementById("qtdis");
       // elementById.setAttribute("visibility","visible")
       elementById.hidden = true;
+      elementById.style.co
+
+    },
+    changeColor(o){
+      if(o.target.style.color=='white'){
+        o.target.style.color='blue';
+      }else{
+        o.target.style.color='white';
+      }
+    },
+    bindLi(){
+      debugger
+      $('.qt_ul_a').bind('mouseover mouseleave',this.changeColor(this))
+
     }
   },
   mounted() {
@@ -104,7 +131,19 @@ export default {
   position: fixed;
   margin-left: 100Px;
   margin-top: 100px;
-
   /*display: none;*/
+}
+.qtUl{
+  background-color: var(--txt);
+  opacity:0.5;/*opacity 用于指定元素透明度, 支持 0~1 之间的小数.默认值 1-完全不透明, 0-完全透明*/
+  width: 100px;
+  height: 300px;
+  position: absolute;
+  margin-left: 200Px;
+  margin-top: 150px;
+}
+
+.qt_ul_a{
+  color: white
 }
 </style>

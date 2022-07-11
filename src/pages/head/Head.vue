@@ -9,7 +9,7 @@
     </div>
     <!-- 主页图标-->
     <div class="header-links">
-      <a href="javascript:void(0);" class="toggle-btn">
+      <a href="javascript:void(0);" class="toggle-btn" @click="goIndex">
         <span></span>
       </a>
     </div>
@@ -272,7 +272,12 @@
 
 <script>
 export default {
-  name: 'Head'
+  name: 'Head',
+  methods:{
+    goIndex(){
+      window.location="index.html";
+    }
+  }
 }
 </script>
 

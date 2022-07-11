@@ -580,6 +580,7 @@ export default {
   name: "Left",
   methods:{
     a(){
+      alert("222")
       // alert("xxxxx");
       // let liList = this.$refs["main-menu"].getElementsByTagName('li');
     }
